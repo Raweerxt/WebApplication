@@ -27,10 +27,6 @@ def hello_world():
 def get_all_products():
     return jsonify(products),200
 
-@app.route("/products",methods=["GET"])
-def get_all_products():
-    return jsonify(products),200
-
 @app.route("/products",methods=["POST"])
 @cross_origin()
 def add_product():
@@ -42,7 +38,6 @@ def add_product():
     for _ in products :
         count = _   
         tmp = tmp+1
-    # print(oak)
     ttt = 0
     if tmp != 0 :
         ttt = count["_id"]+1
