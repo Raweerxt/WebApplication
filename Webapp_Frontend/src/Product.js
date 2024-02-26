@@ -70,6 +70,6 @@ export default function Product(){
         Price : <input type="text" name ='product_price' ref={myInputRef2}/>
         <br/>
         <button onClick={onAddProduct.bind(this)}>Add</button>
-        {/* <button >Add</button> */}
+        {/* <button >Add</button> */} 
     </div>)
 }
