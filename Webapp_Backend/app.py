@@ -1,8 +1,8 @@
+import certifi
 from flask import Flask,jsonify,request
 from flask_cors import CORS, cross_origin
 from pymongo.mongo_client import MongoClient
-uri = "mongodb+srv://raweerat:Mukmuk272kk.@cluster0.vgxpd7w.mongodb.net/"
-client = MongoClient(uri)
+client = MongoClient("mongodb+srv://raweerat:Mukmuk272kk.@cluster0.vgxpd7w.mongodb.net/", tlsCAFile=certifi.where())
 db = client["shop"]
 collection = db["products"]
 p_in_db = collection.find()

@@ -39,7 +39,6 @@ export default function Product(){
     }
     const onUpdate=(id)=>{
         const data={
-            // id:{id},
             name:myInputRef1.current.value,
             price:myInputRef2.current.value
         }
